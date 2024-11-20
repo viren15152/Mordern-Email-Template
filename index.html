@@ -66,6 +66,40 @@
         line-height: 20px;
         padding: 0 15px;
     }
+    .two-columns.last {
+        padding: 15px 0;
+    }
+    .two-columns .column {
+    width: 50%; 
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top; 
+    text-align: left; 
+}
+
+.two-columns .content {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: left;
+    padding: 20px; 
+}
+/*.button {
+    background-color: white;
+    color:#171a1b;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}*/
+
+.button-dark {
+    background-color: #171a1b;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
 </style>
 </head>
@@ -180,9 +214,55 @@
 
 
 <!-- TWO COLUMN SECTION -->
+<tr>
+    <td style="background-color: #26292b; color: #ffffff;">
+        <table width="100%">
+            <tr>
+                <td class="two-columns last">
+                    <!-- First Column -->
+                    <table class="column" width="50%" style="text-align: center;">
+                        <tr>
+                            <td class="padding">
+                                <a href="#"><img src="img/keyboard.jpg" alt="Keyboard Image" width="260" style="max-width: 100%;"></a>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!-- Second Column -->
+                    <table class="column" width="50%" style="text-align: left; vertical-align: top;">
+                        <tr>
+                            <td class="padding">
+                                <!-- Add proper styles for text visibility -->
+                                <p style="font-weight: bold; font-size: 18px; color: #ffffff; margin: 0 0 10px;">Create Custom Designs</p>
+                                <p style="font-size: 16px; color: #ffffff; margin: 0 0 16px;">Design Email templates to your specification</p>
+                              <!--  <a href="#" class="button">Read More</a> -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+
 
 
 <!-- TITLE, TEXT & BUTTON -->
+<tr>
+    <td style="padding: 15px 0 50px;">
+        <table width="100%">
+            <tr>
+                <td style="text-align: center;padding: 15px;">
+                    <p style="font-size: 20px;font-weight: bold;">HTML Email Template</p>
+                    <p style="line-height: 23px; font-size: 15px; padding: 5px 0 15px;">Responsive HTML Email Templates that you can build around.</p>
+                    <a href="#" class="button-dark">View Options here</a>
+                </td>
+            </tr>
+
+        </table>
+    </td>
+</tr>
 
 
 <!-- FOOTER SECTION -->
@@ -194,7 +274,7 @@
 </body>
 </html>
 
-<div style="position:absolute;bottom: 0;width: 100%;text-align: center;line-height: 40px;font-size: 25px;">
+<!--    <div style="position:absolute;bottom: 0;width: 100%;text-align: center;line-height: 40px;font-size: 25px;">
 	<a href="https://main--resilient-moonbeam-d97f1c.netlify.app/" target="_blank" style="color: #404577;text-decoration: none;">React JS Portfolio Page</a>
 </div>
 
@@ -202,7 +282,7 @@
 
 
 
-<!-- Begin Social Share **you can remove this to center the template :) -->
+<!-- Begin Social Share **you can remove this if necessary -->
 <style>
 	.btn:hover {
 		color: white;
@@ -210,10 +290,6 @@
 		transform: scale(1.02);
 	}
 </style>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-sm btn-danger" style="position: absolute; right: 7px; bottom: 7px;transition: transform .3s ease;" data-toggle="modal" data-target="#socialModal">
-  Subscribe!
-</button>
 <!-- Modal -->
 <div class="modal fade" id="socialModal" style="font-family: 'Poppins', sans-serif;">
   <div class="modal-dialog modal-md" role="document">
